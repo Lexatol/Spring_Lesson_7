@@ -5,6 +5,7 @@ import com.geekbrains.geekmarket.entities.SystemUser;
 import com.geekbrains.geekmarket.entities.User;
 import com.geekbrains.geekmarket.repositories.RoleRepository;
 import com.geekbrains.geekmarket.repositories.UserRepository;
+import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -19,6 +20,7 @@ import java.util.Collection;
 import java.util.stream.Collectors;
 
 @Service
+@Data
 public class UserServiceImpl implements UserService {
 	private UserRepository userRepository;
 	private RoleRepository roleRepository;

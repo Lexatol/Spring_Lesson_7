@@ -58,11 +58,16 @@ public class ProductService {
         return productRepository.findAllByVendorCode(code);
     }
 
+
     public Product getProductById(Long id) {
         Optional<Product> product = productRepository.findById(id);
         if (product.isPresent()) {
             return product.get();
         }
         return null;
+    }
+
+    public Product saveOrUpdate(Product product) {
+        return productRepository.save(product);
     }
 }

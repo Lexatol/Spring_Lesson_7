@@ -39,4 +39,8 @@ public class Product {
     @Column(name = "create_at")
     @Temporal(TemporalType.DATE)
     private Date createAt;
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }

@@ -43,6 +43,30 @@ public class SystemUser {
     @Column(name = "phone")
     private String phone;
 
+    public String getUserName() {
+        return userName;
+    }
+
+    public CharSequence getPassword() {
+        return password;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
 //    @NotNull
 //    @Min(value = 0, message = "value must be greater or equals than 0")
 //    @Max(value = 10, message = "value must be lesser or equals than 10")
